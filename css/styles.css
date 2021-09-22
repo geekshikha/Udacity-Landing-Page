@@ -1,1 +1,269 @@
-demo
+*,
+html {
+    scroll-behavior: smooth;
+}
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+h1 {
+    font-family: "Montserrat-Black", sans-serif;
+    color: white;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: "Montserrat-Bold";
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h5 {
+    visibility: hidden;
+}
+
+.container-fluid {
+    padding: 6% 15% 7%;
+}
+
+#title {
+    background-color: #ff4c68;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+}
+
+/*********    Navigation ******/
+nav {
+    font-size: 1.1em;
+    background: linear-gradient(90deg, #7319a9 0%, #ec0722 100%) 0 0 no-repeat padding-box;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 3.5em;
+    align-items: center;
+}
+
+.logo {
+    width: 20em;
+    padding-top: 0.1em;
+    padding-left: 1em;
+    display: inline-block;
+    font-family: "Dancing Script", cursive;
+    color: #dddddd;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 1.8em;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.nav-list li {
+    margin-left: 2em;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.activated {
+    border-block: 0.2em solid;
+    color: white;
+}
+
+.section1 {
+    width: 100%;
+    margin: 5vh auto;
+}
+
+/* Download buttons */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* title image */
+.title-image {
+    width: 45%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+/* Features section */
+#features {
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+}
+
+.page-2 {
+    font-family: " Montserrat-Bold";
+    font-size: 1.5rem;
+}
+
+.hover-icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.hover-icon:hover {
+    color: #ff4c68;
+}
+
+.sub {
+    color: #8f8f8f;
+}
+
+/* Testimonials section */
+#testimonials {
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+
+.testimonials-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 50px;
+}
+
+/* pricing section */
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-col {
+    padding: 3% 2%;
+}
+
+/* call to action section */
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.cta-heading {
+    font-family: "Montserrat-Black";
+    color: white;
+    line-height: 1.5;
+    font-size: 3.5rem;
+}
+
+.cta-button {
+    margin: 5% 3% 5% 0;
+}
+
+/****** Footer ******/
+#footer {
+    border-color: #fff;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.social-icon {
+    margin: 2% 1%;
+}
+
+
+/*************          Small Screen              ********/
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+
+    .main-navbar {
+        height: auto;
+    }
+    .nav-list {
+        list-style-type: none;
+        display: none;
+    }
+
+    .nav-list > li {
+        text-align: center;
+        margin: 0.8em auto;
+    }
+
+    .navbar-toggle {
+        display: contents;
+
+        cursor: pointer;
+        color: white;
+        font-size: 1.3em;
+    }
+
+    .active {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .activated {
+        border-block: 0.2em solid;
+        color: white;
+    }
+}
